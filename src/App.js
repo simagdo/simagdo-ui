@@ -1,12 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import {Table} from "./components/output/Table/Table";
+import ToastExample from "./components/examples/output/Toast/ToastExample";
 
 function App() {
-
     return (
-        <div className="App">
-            <Table/>
+        <div className="app">
+            <ToastExample/>
         </div>
     );
 }
