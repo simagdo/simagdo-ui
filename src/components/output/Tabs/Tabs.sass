@@ -1,0 +1,57 @@
+.Tabs--Buttons
+  position: relative
+  z-index: 1
+  background: #f5f5f5
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
+
+.Tab-Button
+  font-size: 1rem
+  font-weight: 500
+  position: relative
+  padding: 15px 30px
+  text-transform: uppercase
+  color: rgba(0, 0, 0, 0.54)
+  cursor: pointer
+  transition: all 0.3s
+  border: 0
+  background: transparent
+  outline: 0
+
+.Tab-Button:hover
+  color: #000000
+  background: #eeeeee
+
+.Tab-Button--Active
+  color: #2196f3
+
+.Tab-Button--Active:hover
+  color: #2196f3
+
+.Tab-Indicator
+  position: absolute
+  z-index: 1
+  bottom: 0
+  left: 0
+  width: 0
+  height: 3px
+  transition: all 0.3s
+  background: #2196f3
+
+.Tabs--Panels
+  overflow: hidden
+  width: 100%
+  background: white
+  min-height: 50px
+
+.Tabs--Tracker
+  display: flex
+  transition: transform 0.3s
+
+.Tab-Panel
+  width: 100%
+  padding: 25px
+  opacity: 0
+  transition: opacity 0.3s
+
+.Tab-Panel--Active
+  opacity: 1
