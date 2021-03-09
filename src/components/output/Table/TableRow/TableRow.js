@@ -1,7 +1,17 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
-export const TableRow = ({children, type, onClick}) => {
+const TableRow = (props) => {
+
+    const {children}=props;
+
     return (
         <tr>{children}</tr>
     );
 }
+
+TableRow.propTypes = {
+    children: PropTypes.object.isRequired
+};
+
+export default TableRow;
