@@ -4,9 +4,9 @@ import Table from "../Table";
 
 const TableCell = (props) => {
 
-    const {value, type} = props;
+    const {value, type, key} = props;
 
-    const cell = type === 'Head' ? <td>{value}</td> : <td>{value}</td>;
+    const cell = type === 'Head' ? <td key={key}>{value}</td> : <td>{value}</td>;
 
     return (
         cell
@@ -15,7 +15,8 @@ const TableCell = (props) => {
 
 TableCell.propTypes = {
     value: PropTypes.object.isRequired,
-    type: PropTypes.string.isRequired
+    type: PropTypes.string.isRequired,
+    key: PropTypes.string.isRequired
 };
 
 export default TableCell;

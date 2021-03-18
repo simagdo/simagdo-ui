@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/simagdo-ui.iml" filepath="$PROJECT_DIR$/simagdo-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/simagdo-ui.iml" filepath="$PROJECT_DIR$/.idea/simagdo-ui.iml" />
     </modules>
   </component>
 </project>

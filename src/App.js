@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.sass';
+import TableExample from "./components/examples/TableExample";
 
 function App() {
 
     return (
         <div className="app">
-            <h1>Test</h1>
+            <TableExample/>
         </div>
     );
 }
