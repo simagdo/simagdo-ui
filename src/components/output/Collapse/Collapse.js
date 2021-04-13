@@ -26,7 +26,7 @@ const Collapse = ({collapsed, children}) => {
 }
 
 Collapse.propTypes = {
-    collapsed: PropTypes.string,
+    collapsed: PropTypes.bool,
     children: PropTypes.object.isRequired
 };
 

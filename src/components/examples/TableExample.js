@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import axios from 'axios';
 import Table from "../output/Table/Table";
 import {getItem} from "../utils/GetItem";
 
@@ -12,7 +11,7 @@ const TableExample = () => {
 
     const fetchData = async () => {
 
-        getItem("http://localhost:8080/api/v1/files/Account/AccountList")
+        getItem("http://localhost:8080/api/v1/files/Account/Lists/AccountList")
             .then(response => {
                 setHeader(response.Header);
                 setBody(response.Body);
