@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import Table from "../Table";
 
 const TableCell = (props) => {
 
@@ -14,7 +13,7 @@ const TableCell = (props) => {
 }
 
 TableCell.propTypes = {
-    value: PropTypes.object.isRequired,
+    value: PropTypes.any.isRequired,
     type: PropTypes.string.isRequired,
     key: PropTypes.string.isRequired
 };

@@ -3,7 +3,7 @@ import Collapse from '../../../output/Collapse/Collapse';
 import Layout from "../../../layout/Layout";
 import {getItem} from "../../../utils/GetItem";
 
-const CollapseExample = (props) => {
+const CollapseExample = () => {
 
     const [record, setRecord] = useState({});
     const [layout, setLayout] = useState([]);
@@ -33,7 +33,7 @@ const CollapseExample = (props) => {
             })
             .catch(error => {
                 console.log(error);
-            });
+            })
 
     }
 
@@ -46,9 +46,9 @@ const CollapseExample = (props) => {
             <Collapse
                 collapsed={false}>
                 <Layout
-                    children={layout}
                     record={record}
-                    object={object}/>
+                    object={object}
+                    children={layout}/>
             </Collapse>
         </div>
     );

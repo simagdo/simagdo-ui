@@ -13,14 +13,15 @@ const Layout = (props) => {
 
             {children.map((column, index) => {
                 return (
-                    <LayoutRow>
+                    <LayoutRow key={`Layout-Row-${index}`}>
                         {column.Fields.map((row, index) => {
                             console.log(row.Field.charAt(0).toUpperCase() + row.Field.slice(1))
                             console.log(object.find(obj => obj.apiName === row.Field.charAt(0).toUpperCase() + row.Field.slice(1)))
                             console.log(object.length)
                             return (
                                 <LayoutColumn
-                                    label={object.find(obj => obj.apiName === row.Field.charAt(0).toUpperCase() + row.Field.slice(1)).name}
+                                    key={`Layout-Column-${index}`}
+                                    label={object.length === 0 ? row.Field : object.find(obj => obj.apiName === row.Field.charAt(0).toUpperCase() + row.Field.slice(1)).name}
                                     value={record[row.Field]}/>
                             );
                         })}
