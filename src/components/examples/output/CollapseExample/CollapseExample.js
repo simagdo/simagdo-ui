@@ -27,7 +27,7 @@ const CollapseExample = () => {
                 console.log(error);
             });
 
-        getItem("http://localhost:8080/api/v1/objectFields")
+        getItem("http://localhost:8080/api/v1/objectFields/1")
             .then(response => {
                 setObject(response);
             })
